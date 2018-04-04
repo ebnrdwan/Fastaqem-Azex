@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/awrad"
+    tools:context="com.example.doaa.fastaqem.Main3Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#f000"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:id="@+id/rv"
+        android:layout_marginTop="3dp"
+        android:layout_weight="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إضافة ورد"
+        android:textColor="#274954"
+        android:onClick="AddWerd"
+        android:background="@drawable/buttonshape"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/b_addWerd"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="90%"
+            android:textColor="#f000"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+
+            android:layout_marginLeft="68dp"
+            android:id="@+id/tv_showResult1"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مجموع نقاط اليوم: "
+            android:textColor="#f000"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginLeft="98dp"
+            android:id="@+id/tv_showResult"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:layout_weight="0.17" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textColor="#274954"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/tv_showMessageResult"
+        android:text=" رسالتك  اليوم  قول الله عزوجل  والذين جاهدوا فينا لنهدينهم سبلنا"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>
+</ScrollView>

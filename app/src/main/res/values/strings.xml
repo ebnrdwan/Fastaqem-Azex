@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="SpinnerItems">
+        <item >لم تؤدى</item>
+        <item >من 20 : 40</item>
+        <item >من 40 : 60</item>
+        <item >من 60 : 80</item>
+        <item >من 80 : 100</item>
+    </string-array>
+</resources>

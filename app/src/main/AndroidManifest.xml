@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doaa.fastaqem">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icconn"
+        android:label="فاستقم"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"/>
+        <activity
+            android:name=".Main3Activity"/>
+        <activity
+            android:name=".Main3_1Activity"
+            android:label="          إضافه ورد جديد          "
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:noHistory="true"/>
+        <activity
+            android:name=".Main4Activity"/>
+        <activity
+            android:name=".Main4_1Activity"
+            android:label="           إضافه مهام جديدة             "
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:noHistory="true"/>
+        <activity
+            android:name=".Main5Activity" />
+        <activity
+            android:name=".Main5_1Activity"
+            android:label="          إضافه تذكرة جديدة          "
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:noHistory="true"/>
+        <receiver
+            android:name=".AlertReceiver"
+            android:enabled="true"
+            android:exported="true" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
